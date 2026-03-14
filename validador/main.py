@@ -23,6 +23,3 @@ def health():
     return {"status": "ok", "service": "spain-tax-validator", "version": "1.0.0"}
 
 
-@app.get("/debug/headers")
-def debug_headers(request: Request):
-    return dict(request.headers)
